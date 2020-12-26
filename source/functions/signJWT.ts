@@ -6,9 +6,11 @@ import Iuser from '../interfaces/user';
 const NAMESPACE = 'Auth';
 
 const signJWT = (user: Iuser, callback: (error: Error | null, token: String | null) => void): void => {
-    var timeSince = new Date().getTime();
-    var expirationTime = timeSince + Number(config.server.token.expireTime) * 100000;
-    var expirationTimeInSeconds = Math.floor(expirationTime / 1000);
+   // var timeSince = new Date().getTime();
+   // var expirationTime = timeSince + Number(config.server.token.expireTime) * 100;
+   // var expirationTimeInSeconds = Math.floor(expirationTime / 1000);
+
+   var expirationTimeInSeconds=(1*60);  //1 min//(60 * 60 1hr)
     logging.info(NAMESPACE, `Attempting to sign token for ${user.username}`);
 
     try {

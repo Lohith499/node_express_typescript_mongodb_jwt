@@ -5,7 +5,8 @@
   "main": "source/server.ts",
   "scripts": {
     "build": "del build && prettier --write source/ && tsc",
-    "start": "node build/server.js",
+    "start" : "tsc",
+    "starter": "node build/server.js",
     "dev": "ts-node source/server.ts"
   },
   "repository": {
