@@ -11,7 +11,7 @@
     "strict": true,
     "esModuleInterop": true,
     "noEmitOnError": true,
-    "watch": true
+    "watch": false
   },
   "exclude": [
     "node_modules"
