@@ -13,7 +13,7 @@ const MONGO_OPTIONS = {
 };
 
 const MONGO_USERNAME = process.env.MONGO_USERNAME || 'opennem_admin';
-const MONGO_PASSWORD = process.env.MONGO_PASSWORD || 'Gvsu1234';
+const MONGO_PASSWORD = process.env.MONGO_PASSWORD || '****';
 const MONGO_HOST = process.env.MONGO_URL || `opennemcrm1.wfdg2.mongodb.net`;
 const MONGO_DATABASE = process.env.MONGO_DATABASE || `nodedb`;
 
